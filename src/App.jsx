@@ -7,7 +7,7 @@ import WeatherAppUrl from './assets/weather-app.png'
 function App() {
 
   return (
-    <main className="min-h-screen bg-stone-900 flex justify-center">
+    <main className="min-h-screen bg-stone-900 flex justify-center overflow-x-hidden">
       <div className="container max-w-[700px] w-full px-4">
         <header className="py-4 flex items-center sticky top-0 bg-stone-900 w-full z-10" >
           <a href="#header" className="font-mono  text-stone-200 text-xl font-bold hover:text-blue-400 sm:text-2xl outline-none p-2">OM KAUSHIK</a>
