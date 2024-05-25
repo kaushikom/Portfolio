@@ -86,7 +86,7 @@ function App() {
 
           </section>
         </section>
-        <section className="mt-8 scroll-m-20" id="projects" >
+        <section className="mt-8 scroll-m-24" id="projects" >
            <h1 className="text-stone-50 text-3xl font-semibold font-sans">Projects</h1>
 <Project
 title="Bulletin Board"
