@@ -11,7 +11,7 @@ function App() {
       <div className="container max-w-[700px] w-full px-4">
         <header className="py-4 flex items-center sticky top-0 bg-stone-900 w-full z-10" >
           <a href="#header" className="font-mono  text-stone-200 text-xl font-bold hover:text-blue-400 sm:text-2xl outline-none p-2">OM KAUSHIK</a>
-          <ul className="text-stone-300 flex gap-4 px-4 ml-auto font-mono sm:gap-8">
+          <ul className="text-stone-300 flex ml-auto font-mono sm:gap-8">
             <a className="hover:text-blue-400 p-2" href="#skills">Skills</a>
             <a className="hover:text-blue-400 p-2" href="#projects">Projects</a>
             <a className="hover:text-blue-400 p-2" href="#about">About</a>
