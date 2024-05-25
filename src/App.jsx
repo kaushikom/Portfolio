@@ -46,17 +46,17 @@ function App() {
           
               <div className="flex flex-col items-center gap-2">
             <img className="h-[50px] w-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg" />
-                <span className="text-stone-200">Redux Toolkit</span>
+                <span className="text-stone-200 text-center">Redux Toolkit</span>
               </div>
               
               <div className="flex flex-col items-center gap-2">
             <img className="invert h-[50px] w-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/reactrouter/reactrouter-plain.svg" />
-                <span className="text-stone-200">React Router</span>
+                <span className="text-stone-200 text-center">React Router</span>
               </div>
           
               <div className="flex flex-col items-center gap-2">
             <img className="h-[50px] w-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
-                <span className="text-stone-200">Tailwind CSS</span>
+                <span className="text-stone-200 text-center">Tailwind CSS</span>
               </div>
 
               <div className="flex flex-col items-center gap-2">
