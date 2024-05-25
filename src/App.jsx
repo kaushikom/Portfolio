@@ -21,7 +21,7 @@ function App() {
           <h1 className="text-stone-50 text-3xl font-semibold font-sans">Hey, I'm Om 👋</h1>
           <h3 className="text-stone-300 mt-4 text-lg" >A front-end developer passionate about creating seamless user experiences.</h3>
         </section>
-        <section className="mt-8 scroll-m-24"id="skills">
+        <section className="mt-8 scroll-m-28"id="skills">
           <h1  className="text-stone-50 text-3xl font-semibold font-sans">Tools <span className="text-blue-300">& Technologies</span></h1>
           <section className="grid grid-cols-3 mt-8 sm:grid-cols-4 gap-y-4 font-mono text-stone-200">
               <div className="flex flex-col items-center gap-2">
@@ -86,7 +86,7 @@ function App() {
 
           </section>
         </section>
-        <section className="mt-8 scroll-m-24" id="projects" >
+        <section className="mt-8 scroll-m-28" id="projects" >
            <h1 className="text-stone-50 text-3xl font-semibold font-sans">Projects</h1>
 <Project
 title="Bulletin Board"
