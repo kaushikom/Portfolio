@@ -4,6 +4,9 @@ const Project = ({title,imageUrl, tags, liveLink, repoLink, content}) => {
     <section className="mt-10">
       <section className="text-stone-200 my-4">
 <h1 className="text-2xl font-mono font-bold">{title}</h1>
+<section className="rounded-2xl overflow-hidden my-4 border-[1px] border-stone-700">
+<img src={imageUrl} alt="screenshot" />
+      </section>
 <h3 className="font-Poppins font-bold text-lg my-2 text-blue-300">Tech Stack : <span className="text-stone-200 font-semibold">{tags}</span></h3>
 <p className="font-Poppins text-md text-justify text-stone-300">{content}</p>
 <div className="flex gap-4 mt-4">
@@ -12,9 +15,7 @@ const Project = ({title,imageUrl, tags, liveLink, repoLink, content}) => {
 
 </div>
       </section>
-      <section className="rounded-2xl overflow-hidden border-2 border-stone-600">
-<img src={imageUrl} alt="screenshot" />
-      </section>
+      
     </section>
   )
 }
