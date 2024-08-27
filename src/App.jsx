@@ -84,6 +84,19 @@ function App() {
                 <span className="text-stone-200">Vercel</span>
               </div>
 
+              <div className="flex flex-col items-center gap-2">
+            
+            <img className="h-[50px] w-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" />
+                <span className="text-stone-200">PHP</span>
+              </div>
+              <div className="flex flex-col items-center gap-2">
+            
+            
+            <img className="h-[50px] w-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" />
+          
+                <span className="text-stone-200">MySQL</span>
+              </div>
+
           </section>
         </section>
         <section className="mt-8 scroll-m-28" id="projects" >
