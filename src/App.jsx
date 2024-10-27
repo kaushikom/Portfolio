@@ -81,15 +81,6 @@ function App() {
   return (
     <main className="relative flex justify-center min-h-screen bg-stone-900">
       <div className="container max-w-[700px] w-full px-4">
-        {/* <header className="sticky top-0 z-10 flex items-center w-full py-4 bg-stone-900" >
-          <a href="#header" className="p-2 font-mono text-xl font-bold outline-none text-stone-200 hover:text-blue-400 sm:text-2xl">OM KAUSHIK</a>
-          <ul className="flex ml-auto font-mono text-stone-300 sm:gap-8">
-            <a className="p-2 hover:text-blue-400" href="#skills">Skills</a>
-            <a className="p-2 hover:text-blue-400" href="#exp">Experience</a>
-            <a className="p-2 hover:text-blue-400" href="#projects">Projects</a>
-            <a className="p-2 hover:text-blue-400" href="#about">About</a>
-          </ul>
-        </header> */}
         <Header />
         <section className="pt-8 mb-12 scroll-m-16"id="header">
           <h1 className="font-sans text-3xl font-semibold text-stone-50">Hey, I'm Om 👋</h1>
@@ -212,7 +203,7 @@ function App() {
  <h1 className="font-sans text-3xl font-semibold text-stone-50">Experience</h1>
  {/* Code Backward labs */}
  <div className="flex items-start gap-4 my-8">
-  <div className=" w-[45px] h-[45px]">
+  <div className="sm:w-[45px] sm:h-[45px]">
     <img className="mt-4 rounded-full" src="https://media.licdn.com/dms/image/v2/C4D0BAQEoVwovW2RMRA/company-logo_100_100/company-logo_100_100/0/1647099564262?e=1738195200&v=beta&t=5P5pskd7Y1elDUybA1c4K-Cb-RQqpdsJkoiCyLZsu0I" alt="" />
     </div>
    <div>
@@ -226,7 +217,7 @@ function App() {
  </div>
  {/* DPI Infotech */}
  <div className="flex items-start gap-4 my-8">
-  <div className=" w-[45px] h-[45px]">
+  <div className="sm:w-[45px] sm:h-[45px]">
     <img className="mt-4 rounded-full" src="https://media.licdn.com/dms/image/v2/C4D0BAQG9aDmiWin4BQ/company-logo_100_100/company-logo_100_100/0/1630533785718/dpi_infotech_logo?e=1738195200&v=beta&t=QI1efsuftWGj6uzazT2keBKJhO070vxtpSdKA-FzfDo" alt="" />
     </div>
    <div>
