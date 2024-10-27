@@ -3,27 +3,101 @@ import BulletinBoardUrl from './assets/bulletin-board.png'
 import CVAppUrl from './assets/cv-app.png'
 import ToDoUrl from './assets/todo.png'
 import WeatherAppUrl from './assets/weather-app.png'
+import React, { useState } from 'react';
+import { Menu, X } from 'lucide-react';
+
+const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const menuItems = [
+    { href: "#skills", label: "Skills" },
+    { href: "#exp", label: "Experience" },
+    { href: "#projects", label: "Projects" },
+    { href: "#about", label: "About" }
+  ];
+
+  return (
+    <header className="sticky top-0 z-10 bg-stone-900">
+      <div className="flex items-center w-full px-4 py-4">
+        <a 
+          href="#header" 
+          className="font-mono text-xl font-bold outline-none text-stone-200 hover:text-blue-400 sm:text-2xl"
+        >
+          OM KAUSHIK
+        </a>
+        
+        {/* Desktop Menu */}
+        <ul className="hidden gap-8 ml-auto font-mono md:flex text-stone-300">
+          {menuItems.map((item) => (
+            <li key={item.href}>
+              <a 
+                className="p-2 hover:text-blue-400" 
+                href={item.href}
+              >
+                {item.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+
+        {/* Mobile Menu Button */}
+        <button 
+          onClick={toggleMenu}
+          className="p-2 ml-auto md:hidden text-stone-200"
+          aria-label="Toggle menu"
+        >
+          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
+      </div>
+
+      {/* Mobile Menu Dropdown */}
+      {isMenuOpen && (
+        <div className="border-t md:hidden bg-stone-900 border-stone-800">
+          <ul className="py-2 font-mono text-stone-300">
+            {menuItems.map((item) => (
+              <li key={item.href}>
+                <a 
+                  className="block px-4 py-2 hover:text-blue-400 hover:bg-stone-800"
+                  href={item.href}
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {item.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+    </header>
+  );
+};
 
 function App() {
 
   return (
-    <main className="min-h-screen bg-stone-900 flex justify-center relative">
+    <main className="relative flex justify-center min-h-screen bg-stone-900">
       <div className="container max-w-[700px] w-full px-4">
-        <header className="py-4 flex items-center sticky top-0 bg-stone-900 w-full z-10" >
-          <a href="#header" className="font-mono  text-stone-200 text-xl font-bold hover:text-blue-400 sm:text-2xl outline-none p-2">OM KAUSHIK</a>
-          <ul className="text-stone-300 flex ml-auto font-mono sm:gap-8">
-            <a className="hover:text-blue-400 p-2" href="#skills">Skills</a>
-            <a className="hover:text-blue-400 p-2" href="#projects">Projects</a>
-            <a className="hover:text-blue-400 p-2" href="#about">About</a>
+        {/* <header className="sticky top-0 z-10 flex items-center w-full py-4 bg-stone-900" >
+          <a href="#header" className="p-2 font-mono text-xl font-bold outline-none text-stone-200 hover:text-blue-400 sm:text-2xl">OM KAUSHIK</a>
+          <ul className="flex ml-auto font-mono text-stone-300 sm:gap-8">
+            <a className="p-2 hover:text-blue-400" href="#skills">Skills</a>
+            <a className="p-2 hover:text-blue-400" href="#exp">Experience</a>
+            <a className="p-2 hover:text-blue-400" href="#projects">Projects</a>
+            <a className="p-2 hover:text-blue-400" href="#about">About</a>
           </ul>
-        </header>
+        </header> */}
+        <Header />
         <section className="pt-8 mb-12 scroll-m-16"id="header">
-          <h1 className="text-stone-50 text-3xl font-semibold font-sans">Hey, I'm Om 👋</h1>
-          <h3 className="text-stone-300 mt-4 text-lg" >A front-end developer passionate about creating seamless user experiences.</h3>
+          <h1 className="font-sans text-3xl font-semibold text-stone-50">Hey, I'm Om 👋</h1>
+          <h3 className="mt-4 text-lg text-stone-300" >A full-stack developer passionate about creating seamless user experiences.</h3>
         </section>
         <section className="mt-8 scroll-m-28"id="skills">
-          <h1  className="text-stone-50 text-3xl font-semibold font-sans">Tools <span className="text-blue-300">& Technologies</span></h1>
-          <section className="grid grid-cols-3 mt-8 sm:grid-cols-4 gap-y-4 font-mono text-stone-200">
+          <h1  className="font-sans text-3xl font-semibold text-stone-50">Tools <span className="text-blue-300">& Technologies</span></h1>
+          <section className="grid grid-cols-3 mt-8 font-mono sm:grid-cols-4 gap-y-4 text-stone-200">
               <div className="flex flex-col items-center gap-2">
                 <img className="h-[50px] w-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
                 <span className="text-stone-200">HTML</span>
@@ -46,17 +120,17 @@ function App() {
           
               <div className="flex flex-col items-center gap-2">
             <img className="h-[50px] w-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg" />
-                <span className="text-stone-200 text-center">Redux Toolkit</span>
+                <span className="text-center text-stone-200">Redux Toolkit</span>
               </div>
               
               <div className="flex flex-col items-center gap-2">
             <img className="invert h-[50px] w-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/reactrouter/reactrouter-plain.svg" />
-                <span className="text-stone-200 text-center">React Router</span>
+                <span className="text-center text-stone-200">React Router</span>
               </div>
           
               <div className="flex flex-col items-center gap-2">
             <img className="h-[50px] w-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
-                <span className="text-stone-200 text-center">Tailwind CSS</span>
+                <span className="text-center text-stone-200">Tailwind CSS</span>
               </div>
 
               <div className="flex flex-col items-center gap-2">
@@ -74,7 +148,7 @@ function App() {
                 <span className="text-stone-200">Appwrite</span>
               </div>
 
-              <div className="flex flex-col items-center gap-2">
+              {/* <div className="flex flex-col items-center gap-2">
             <img className="h-[50px] w-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg" />
                 <span className="text-stone-200">Vite</span>
               </div>
@@ -82,16 +156,51 @@ function App() {
               <div className="flex flex-col items-center gap-2">
             <img className="invert h-[50px] w-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg" />
                 <span className="text-stone-200">Vercel</span>
+              </div> */}
+
+              <div className="flex flex-col items-center gap-2">
+        
+            <img className="h-[50px] w-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" />
+          
+                <span className="text-stone-200">Figma</span>
+              </div>
+              <div className="flex flex-col items-center gap-2">
+        
+            <img className="h-[50px] w-auto invert" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" />
+          
+                <span className="text-stone-200">Express</span>
+              </div>
+              <div className="flex flex-col items-center gap-2">
+        
+            <img className="h-[50px] w-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain-wordmark.svg" />
+          
+                <span className="text-stone-200">Node.js</span>
+              </div>
+              <div className="flex flex-col items-center gap-2">
+        
+            <img className="h-[50px] w-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" />
+          
+                <span className="text-stone-200">MongoDB</span>
+              </div>
+              <div className="flex flex-col items-center gap-2">
+        
+            <img className="h-[50px] w-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" />
+          
+                <span className="text-stone-200">Postman</span>
+              </div>
+              <div className="flex flex-col items-center gap-2">
+        
+            <img className="h-[50px] w-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" />
+          
+                <span className="text-stone-200">PostgreSQL</span>
               </div>
 
               <div className="flex flex-col items-center gap-2">
-            
             <img className="h-[50px] w-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" />
                 <span className="text-stone-200">PHP</span>
               </div>
+
               <div className="flex flex-col items-center gap-2">
-            
-            
             <img className="h-[50px] w-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" />
           
                 <span className="text-stone-200">MySQL</span>
@@ -99,8 +208,40 @@ function App() {
 
           </section>
         </section>
+        <section className="mt-8 scroll-m-28" id="exp">
+ <h1 className="font-sans text-3xl font-semibold text-stone-50">Experience</h1>
+ {/* Code Backward labs */}
+ <div className="flex items-start gap-4 my-8">
+  <div className=" w-[45px] h-[45px]">
+    <img className="mt-4 rounded-full" src="https://media.licdn.com/dms/image/v2/C4D0BAQEoVwovW2RMRA/company-logo_100_100/company-logo_100_100/0/1647099564262?e=1738195200&v=beta&t=5P5pskd7Y1elDUybA1c4K-Cb-RQqpdsJkoiCyLZsu0I" alt="" />
+    </div>
+   <div>
+     <h1 className="mt-4 text-xl text-stone-100">Full Stack Developer Intern</h1>
+     <div className="text-stone-400"><a className="text-stone-200 hover:text-blue-500" href="https://www.linkedin.com/company/brand-boom-digital-solutions/posts/?feedView=all">Code Backward Lab</a> , Oct 2024 - Present </div>
+     <ul className="px-2 mt-4 list-disc text-stone-200">
+      <li className="my-2">Worked on backend technologies such as MongoDB, Express.js, Node.js and PostgreSQL</li>
+      <li className="my-2">Mainained modular codebase and implemented industry standard practices.</li>
+     </ul>
+   </div>
+ </div>
+ {/* DPI Infotech */}
+ <div className="flex items-start gap-4 my-8">
+  <div className=" w-[45px] h-[45px]">
+    <img className="mt-4 rounded-full" src="https://media.licdn.com/dms/image/v2/C4D0BAQG9aDmiWin4BQ/company-logo_100_100/company-logo_100_100/0/1630533785718/dpi_infotech_logo?e=1738195200&v=beta&t=QI1efsuftWGj6uzazT2keBKJhO070vxtpSdKA-FzfDo" alt="" />
+    </div>
+   <div>
+     <h1 className="mt-4 text-xl text-stone-100">Backend Developer Intern</h1>
+     <div className="text-stone-400"><a className="text-stone-200 hover:text-blue-500" href="https://www.linkedin.com/company/dpi-infotech/">DPI Infotech</a> , Aug 2024 - Sep 2024 </div>
+     <ul className="px-2 mt-4 list-disc text-stone-200">
+      <li className="my-2">Built dynamic and responsive web applications with Javascript, AJAX, PHP and MySQL</li>
+      <li className="my-2">Worked on managing both frontend and backend of a large ecommerce platform</li>
+      <li className="my-2">Created user-friendly interface with modern libraries and frameworks.</li>
+     </ul>
+   </div>
+ </div>
+        </section>
         <section className="mt-8 scroll-m-28" id="projects" >
-           <h1 className="text-stone-50 text-3xl font-semibold font-sans">Projects</h1>
+           <h1 className="font-sans text-3xl font-semibold text-stone-50">Projects</h1>
 <Project
 title="Bulletin Board"
 imageUrl={BulletinBoardUrl}
@@ -135,12 +276,12 @@ content="Weather App is built with HTML, CSS, and JavaScript to practice API cal
 />
         </section>
         <section className="my-8" id="about" >
-           <h1 className="text-stone-50 text-3xl font-semibold font-sans">About</h1>
-      <p className="text-stone-300 mt-4 text-lg font-Poppins text-justify">I'm a front-end developer from Delhi, India. I enjoy seeking out creative solutions to complex problems. I thrive in dynamic environments and am always eager to learn and implement the latest in web development. <br />In my free time, I get inspiration from other people's work and try out new technologies to build side projects. Apart from that, I also read books sometimes. <br />Feel free to reach out and say hello at: <a className="text-blue-400 underline" href="mailto:omkaushik015@gmail.com">omkaushik015@gmail.com</a></p>
-      <ul className="text-stone-300 font-semibold flex justify-around mt-10 mb-10">
-        <li><a className="flex flex-col items-center hover:scale-110 transition-transform" href="https://x.com/OmKaushik_"><img className="invert h-[30px] w-auto" src="https://img.icons8.com/?size=100&id=8824&format=png&color=000000" alt="" />Twitter</a></li>
-        <li><a className="flex flex-col items-center hover:scale-110 transition-transform" href="https://www.linkedin.com/in/om-kaushik-a59017205"><img className="invert h-[30px] w-auto" src="https://img.icons8.com/?size=100&id=8808&format=png&color=000000" alt="" />LinkedIn</a></li>
-        <li><a className="flex flex-col items-center hover:scale-110 transition-transform" href="https://github.com/kaushikom"><img className="invert h-[30px] w-auto" src="https://img.icons8.com/?size=100&id=3tC9EQumUAuq&format=png&color=000000" alt="" />Github</a></li>
+           <h1 className="font-sans text-3xl font-semibold text-stone-50">About</h1>
+      <p className="mt-4 text-lg text-justify text-stone-300 font-Poppins">I'm a front-end developer from Delhi, India. I enjoy seeking out creative solutions to complex problems. I thrive in dynamic environments and am always eager to learn and implement the latest in web development. <br />In my free time, I get inspiration from other people's work and try out new technologies to build side projects. Apart from that, I also read books sometimes. <br />Feel free to reach out and say hello at: <a className="text-blue-400 underline" href="mailto:omkaushik015@gmail.com">omkaushik015@gmail.com</a></p>
+      <ul className="flex justify-around mt-10 mb-10 font-semibold text-stone-300">
+        <li><a className="flex flex-col items-center transition-transform hover:scale-110" href="https://x.com/OmKaushik_"><img className="invert h-[30px] w-auto" src="https://img.icons8.com/?size=100&id=8824&format=png&color=000000" alt="" />Twitter</a></li>
+        <li><a className="flex flex-col items-center transition-transform hover:scale-110" href="https://www.linkedin.com/in/om-kaushik-a59017205"><img className="invert h-[30px] w-auto" src="https://img.icons8.com/?size=100&id=8808&format=png&color=000000" alt="" />LinkedIn</a></li>
+        <li><a className="flex flex-col items-center transition-transform hover:scale-110" href="https://github.com/kaushikom"><img className="invert h-[30px] w-auto" src="https://img.icons8.com/?size=100&id=3tC9EQumUAuq&format=png&color=000000" alt="" />Github</a></li>
       </ul>
         </section>
       </div>
