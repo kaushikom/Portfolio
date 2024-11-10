@@ -345,8 +345,8 @@ content="Weather App is built with HTML, CSS, and JavaScript to practice API cal
         </section>
         <section className="my-8" id="about" >
            <h1 className="font-sans text-3xl font-semibold text-stone-50">About</h1>
-      <p className="mt-4 text-lg text-justify text-stone-300 font-Poppins">Hello! I'm a developer from Delhi who believes in learning and adapting to whatever technology best suits the needs.I enjoy the challenge of picking up new technologies and frameworks as needed.
-I enjoy tackling new challenges and building projects that help me grow as a developer. In my free time, I get inspiration from other people's work and try out new technologies to build side projects, explore new technologies, learn from the dev community, or read a good book.
+      <p className="mt-4 text-lg text-justify text-stone-300 font-Poppins">Hello! I'm a developer from Delhi who believes in learning and adapting to whatever technology best suits the needs. I enjoy the challenge of picking up new technologies and frameworks as needed.
+In my free time, I get inspiration from other people's work and try out new technologies to build side projects, learn from the dev community, or read a good book.
 <br />Feel free to reach out and say hello at: <a className="text-blue-400 underline" href="mailto:omkaushik015@gmail.com">omkaushik015@gmail.com</a></p>
       <ul className="flex justify-around mt-10 mb-10 font-semibold text-stone-300">
         <li><a className="flex flex-col items-center transition-transform hover:scale-110" href="https://x.com/OmKaushik_"><img className="invert h-[30px] w-auto" src="https://img.icons8.com/?size=100&id=8824&format=png&color=000000" alt="" />Twitter</a></li>
