@@ -143,6 +143,10 @@ function App() {
             <img className="h-[50px] w-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg" />
                 <span className="text-center text-stone-200">Redux Toolkit</span>
               </div>
+              <div className="flex flex-col items-center gap-2">
+            <img className="h-[50px] brightness-110 w-auto" src="https://raw.githubusercontent.com/pmndrs/zustand/refs/heads/main/examples/demo/public/logo192.png" />
+                <span className="text-center text-stone-200">Zustand</span>
+              </div>
               
               <div className="flex flex-col items-center gap-2">
             <img className="invert h-[50px] w-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/reactrouter/reactrouter-plain.svg" />
