@@ -171,6 +171,10 @@ function App() {
             <img className="h-[50px] w-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jest/jest-plain.svg" />
                 <span className="text-stone-200">Jest</span>
               </div>
+              <div className="flex flex-col items-center gap-2">
+            <img className="h-[50px] w-auto brightness-200 hue-rotate-180" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/selenium/selenium-original.svg" />
+                <span className="text-stone-200">Selenium</span>
+              </div>
 
               <div className="flex flex-col items-center gap-2">
             <img className="h-[50px] w-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
