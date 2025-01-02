@@ -133,6 +133,10 @@ function App() {
                 <img className="h-[50px] w-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
                 <span className="text-stone-200">Javascript</span>
               </div>
+              <div className="flex flex-col items-center gap-2">
+                <img className="h-[50px] w-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg" />
+                <span className="text-stone-200">TypeScript</span>
+              </div>
 
               <div className="flex flex-col items-center gap-2">
             <img className="h-[50px] w-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
@@ -152,7 +156,18 @@ function App() {
             <img className="invert h-[50px] w-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/reactrouter/reactrouter-plain.svg" />
                 <span className="text-center text-stone-200">React Router</span>
               </div>
-              
+              <div className="flex flex-col items-center gap-2">
+            <img className="invert h-[50px] w-auto"  src="https://static.cdnlogo.com/logos/e/72/expo-go-app.svg" />
+                <span className="text-center text-stone-200">Expo</span>
+              </div>
+              <div className="flex flex-col items-center gap-2">
+            <img className="h-[50px] w-auto"  src="https://img.icons8.com/nolan/64/react-native.png" alt="react-native" />
+                <span className="text-center text-stone-200">React Native</span>
+              </div>
+               <div className="flex flex-col items-center gap-2">
+            <img className="h-[50px] w-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/capacitor/capacitor-original.svg" />
+                <span className="text-stone-200">Capacitor</span>
+              </div>
               <div className="flex flex-col items-center gap-2">
             <img className="invert h-[50px] w-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/threejs/threejs-original.svg" />
                 <span className="text-center text-stone-200">Three.js</span>
@@ -185,28 +200,20 @@ function App() {
                 <span className="text-stone-200">Git</span>
               </div>
               <div className="flex flex-col items-center gap-2">
+            <img className="invert h-[50px] w-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" />
+                <span className="text-stone-200">Github</span>
+              </div>
+              <div className="flex flex-col items-center gap-2">
             <img className="h-[50px] w-auto invert" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bash/bash-original.svg" />
                 <span className="text-stone-200">Bash</span>
               </div>
-              <div className="flex flex-col items-center gap-2">
-            <img className="h-[50px] w-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/capacitor/capacitor-original.svg" />
-                <span className="text-stone-200">Capacitor</span>
-              </div>
+             
 
               <div className="flex flex-col items-center gap-2">
             <img className="h-[50px] w-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/appwrite/appwrite-original.svg" />
                 <span className="text-stone-200">Appwrite</span>
               </div>
 
-              {/* <div className="flex flex-col items-center gap-2">
-            <img className="h-[50px] w-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg" />
-                <span className="text-stone-200">Vite</span>
-              </div>
-
-              <div className="flex flex-col items-center gap-2">
-            <img className="invert h-[50px] w-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg" />
-                <span className="text-stone-200">Vercel</span>
-              </div> */}
 
               <div className="flex flex-col items-center gap-2">
         
@@ -219,6 +226,18 @@ function App() {
             <img className="h-[50px] w-auto invert" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" />
           
                 <span className="text-stone-200">Express</span>
+              </div>
+              <div className="flex flex-col items-center gap-2">
+        
+            <img className="h-[50px] w-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nginx/nginx-original.svg" />
+          
+                <span className="text-stone-200">Nginx</span>
+              </div>
+              <div className="flex flex-col items-center gap-2">
+        
+            <img className="h-[50px] w-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" />
+          
+                <span className="text-stone-200">AWS</span>
               </div>
               <div className="flex flex-col items-center gap-2">
         
@@ -237,6 +256,12 @@ function App() {
             <img className="h-[50px] w-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" />
           
                 <span className="text-stone-200">Postman</span>
+              </div>
+              <div className="flex flex-col items-center gap-2">
+        
+            <img className="h-[50px] w-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/webpack/webpack-original.svg" />
+          
+                <span className="text-stone-200">Webpack</span>
               </div>
               <div className="flex flex-col items-center gap-2">
         
