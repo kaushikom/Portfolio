@@ -341,41 +341,41 @@ function App() {
    </div>
  </div>
         </section>
-        <section className="mt-8 scroll-m-28" id="projects" >
-           <h1 className="font-sans text-3xl font-semibold text-stone-50">Projects</h1>
-<Project
-title="Bulletin Board"
-imageUrl={BulletinBoardUrl}
-tags= "React.js, Redux Toolkit, Axios, Tailwind CSS"
-liveLink="https://bulletin-board-virid.vercel.app/"
-repoLink="https://github.com/kaushikom/Bulletin-Board"
-content="Bulletin Board is a dynamic platform that allows users to post, react, and read concise news updates. Built with React.js and Redux Toolkit, it offers efficient state management and handles asynchronous actions seamlessly. The application provides a user-friendly interface, ensuring a smooth and engaging experience. Key features include real-time updates, interactive reactions, and a clean, responsive design."
-/>
-<Project 
-title="CV Builder"
-imageUrl={CVAppUrl}
-tags= "React.js"
-liveLink="https://cv-app-om-kaushiks-projects.vercel.app/"
-repoLink="https://github.com/kaushikom/CV-App"
-content="CV Builder is an interactive web application developed with React.js, designed to help users create and download personalized resumes. This project was created to practice managing state, props, and data flow in React applications. Users can add unlimited fields in each section, customize their resumes, and download the final version with ease. The application provides a user-friendly interface, making resume creation intuitive and flexible."
-/>
-<Project 
-title="Todo App"
-imageUrl={ToDoUrl}
-tags="React.js, Tailwind CSS"
-liveLink="https://todo-app-iota-woad-27.vercel.app/"
-repoLink="https://github.com/kaushikom/Todo-App"
-content="Todo App is a task management application built with React.js and Tailwind CSS, offering a sleek and mobile-responsive design. Users can effortlessly add, delete, and check tasks, with haptic feedback enhancing the experience on mobile devices. The app includes features such as clearing all tasks or only completed tasks, and provides three distinct views: All, Active (incomplete tasks), and Completed. This project combines functionality with an intuitive user interface for efficient task management."
-/>
-<Project
-title="Weather App"
-imageUrl={WeatherAppUrl}
-tags="JavaScript, API, HTML, CSS"
-liveLink="https://kaushikom.github.io/Weather-App/"
-repoLink="https://github.com/kaushikom/Weather-App"
-content="Weather App is built with HTML, CSS, and JavaScript to practice API calls and asynchronous code handling. It provides temperature readings in both Celsius and Fahrenheit, with dynamic backgrounds that change according to the weather conditions—sunny, rainy, and more—offering a visually engaging user experience."
-/>
-        </section>
+          {/* <section className="mt-8 scroll-m-28" id="projects" >
+            <h1 className="font-sans text-3xl font-semibold text-stone-50">Projects</h1>
+  <Project
+  title="Bulletin Board"
+  imageUrl={BulletinBoardUrl}
+  tags= "React.js, Redux Toolkit, Axios, Tailwind CSS"
+  liveLink="https://bulletin-board-virid.vercel.app/"
+  repoLink="https://github.com/kaushikom/Bulletin-Board"
+  content="Bulletin Board is a dynamic platform that allows users to post, react, and read concise news updates. Built with React.js and Redux Toolkit, it offers efficient state management and handles asynchronous actions seamlessly. The application provides a user-friendly interface, ensuring a smooth and engaging experience. Key features include real-time updates, interactive reactions, and a clean, responsive design."
+  />
+  <Project 
+  title="CV Builder"
+  imageUrl={CVAppUrl}
+  tags= "React.js"
+  liveLink="https://cv-app-om-kaushiks-projects.vercel.app/"
+  repoLink="https://github.com/kaushikom/CV-App"
+  content="CV Builder is an interactive web application developed with React.js, designed to help users create and download personalized resumes. This project was created to practice managing state, props, and data flow in React applications. Users can add unlimited fields in each section, customize their resumes, and download the final version with ease. The application provides a user-friendly interface, making resume creation intuitive and flexible."
+  />
+  <Project 
+  title="Todo App"
+  imageUrl={ToDoUrl}
+  tags="React.js, Tailwind CSS"
+  liveLink="https://todo-app-iota-woad-27.vercel.app/"
+  repoLink="https://github.com/kaushikom/Todo-App"
+  content="Todo App is a task management application built with React.js and Tailwind CSS, offering a sleek and mobile-responsive design. Users can effortlessly add, delete, and check tasks, with haptic feedback enhancing the experience on mobile devices. The app includes features such as clearing all tasks or only completed tasks, and provides three distinct views: All, Active (incomplete tasks), and Completed. This project combines functionality with an intuitive user interface for efficient task management."
+  />
+  <Project
+  title="Weather App"
+  imageUrl={WeatherAppUrl}
+  tags="JavaScript, API, HTML, CSS"
+  liveLink="https://kaushikom.github.io/Weather-App/"
+  repoLink="https://github.com/kaushikom/Weather-App"
+  content="Weather App is built with HTML, CSS, and JavaScript to practice API calls and asynchronous code handling. It provides temperature readings in both Celsius and Fahrenheit, with dynamic backgrounds that change according to the weather conditions—sunny, rainy, and more—offering a visually engaging user experience."
+  />
+          </section> */}
         <section className="my-8" id="about" >
            <h1 className="font-sans text-3xl font-semibold text-stone-50">About</h1>
       <p className="mt-4 text-lg text-justify text-stone-300 font-Poppins">Hello! I'm a developer from Delhi who believes in learning and adapting to whatever technology best suits the needs. I enjoy the challenge of picking up new technologies and frameworks as needed.
