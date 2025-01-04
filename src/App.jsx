@@ -209,10 +209,7 @@ function App() {
               </div>
              
 
-              <div className="flex flex-col items-center gap-2">
-            <img className="h-[50px] w-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/appwrite/appwrite-original.svg" />
-                <span className="text-stone-200">Appwrite</span>
-              </div>
+           
 
 
               <div className="flex flex-col items-center gap-2">
@@ -283,6 +280,11 @@ function App() {
             <img className="h-[50px] w-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" />
           
                 <span className="text-stone-200">MySQL</span>
+              </div>
+
+   <div className="flex flex-col items-center gap-2">
+            <img className="h-[50px] w-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"  />
+                <span className="text-stone-200">Python</span>
               </div>
 
               <div className="flex flex-col items-center gap-2">
