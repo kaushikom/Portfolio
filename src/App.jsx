@@ -185,6 +185,10 @@ function App() {
             <img className="h-[50px] w-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/materialui/materialui-original.svg"  />
                 <span className="text-center text-stone-200">Material UI</span>
               </div>
+              <div className="flex flex-col items-center gap-2">
+            <img className="h-[50px] w-auto" src="https://ia800801.us.archive.org/14/items/github.com-shadcn-ui-ui_-_2023-08-09_16-03-10/cover.jpg"  />
+                <span className="text-center text-stone-200">Shadcn</span>
+              </div>
 
               <div className="flex flex-col items-center gap-2">
             <img className="h-[50px] w-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jest/jest-plain.svg" />
